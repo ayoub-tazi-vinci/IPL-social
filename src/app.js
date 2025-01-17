@@ -1,25 +1,16 @@
 export class App{
 
-    passwordCheckLenght(password){
-        if(password.length >= 8){
-            return true;
-    } else {
-        return false;
-    } 
-}
+    passwordCheckLenght(password) {
+        return password.length >= 8;
+    }
 
-  passwordCheckSpecial(password){
-    const specialCharacters = [
-        '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+',
-        '{', '}', '[', ']', '|', '\\', ':', ';', '"', '\'', '<', '>', ',', '.', '?', '/', '~', '`'
-    ];
-    if(specialCharacters.includes(password)){
-        return true;
+    passwordCheckSpecial(password) {
+        const specialCharacters = [
+            '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+',
+            '{', '}', '[', ']', '|', '\\', ':', ';', '"', '\'', '<', '>', ',', '.', '?', '/', '~', '`'
+        ];
+        return specialCharacters.some(char => password.includes(char));
     }
-    else{
-        return false;
-    }
-}
 
 } 
 

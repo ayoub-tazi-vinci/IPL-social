@@ -9,4 +9,10 @@ describe("Password checker for function passwordCheck", function () {
 
     expect(result).toBe(true);
   });
+
+    it("passwordCheck should return false if passwordLenght <8", function () {
+        const result = app.passwordCheck("1234567");
+    
+        expect(result).toBe(false);
+        });
   });

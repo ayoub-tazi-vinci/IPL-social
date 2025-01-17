@@ -18,14 +18,7 @@ export class App{
          return numbers.some(num => password.includes(num));
     }
     passwordCheckNoIpl(password) {
-            const ipl="ipl";
-            ipl.toLowerCase();
-            if(password.includes(ipl)){
-                return false;
-            }
-            else{
-                return true;
-            }
+        return !/ipl/i.test(password);
     }
 
 } 

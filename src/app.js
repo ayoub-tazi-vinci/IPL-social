@@ -21,5 +21,12 @@ export class App{
         return !/ipl/i.test(password);
     }
 
+    isPasswordValid(password) {
+        return this.passwordCheckLenght(password) &&
+               this.passwordCheckSpecial(password) &&
+               this.passwordCheckNumber(password) &&
+               this.passwordCheckNoIpl(password);
+    }
+
 } 
 

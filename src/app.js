@@ -9,7 +9,16 @@ export class App{
 }
 
   passwordCheckSpecial(password){
-    return true;
+    const specialCharacters = [
+        '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+',
+        '{', '}', '[', ']', '|', '\\', ':', ';', '"', '\'', '<', '>', ',', '.', '?', '/', '~', '`'
+    ];
+    if(specialCharacters.includes(password)){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
 } 

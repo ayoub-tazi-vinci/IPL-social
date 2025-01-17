@@ -28,4 +28,9 @@ describe("Password checker for function passwordChecklenht", function () {
       const result = app.passwordCheckSpecial("@");
       expect(result).toBe(true);
   });
+
+    it("passwordCheck should return false if password does not have special characters", function () {
+        const result = app.passwordCheckSpecial("12345678");
+        expect(result).toBe(false);
+});
 });

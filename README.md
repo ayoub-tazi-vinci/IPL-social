@@ -21,5 +21,5 @@ Le projet inclut une fonction de validation de mot de passe dans un fichier nomm
 Assurez-vous que toutes les dépendances sont installées avant d'exécuter les tests. Utilisez la commande suivante :
 
 ```bash
-npm test
+npx jasmine
 ```

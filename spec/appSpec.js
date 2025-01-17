@@ -34,3 +34,16 @@ describe("Password checker for function passwordChecklenht", function () {
         expect(result).toBe(false);
 });
 });
+
+describe("Password checker for function passwordCheckNumber", function () {
+    const app = new App();
+    it("passwordCheck should return true if password has numbers", function () {
+      const result = app.passwordCheckNumber("12345678");
+      expect(result).toBe(true);
+    });
+
+    it("passwordCheck should return false if password does not have numbers", function () {
+        const result = app.passwordCheckNumber("abcdefgh");
+        expect(result).toBe(false);
+    });
+});

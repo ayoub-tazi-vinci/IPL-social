@@ -12,5 +12,9 @@ export class App{
         return specialCharacters.some(char => password.includes(char));
     }
 
+    passwordCheckNumber(password) {
+        return true;
+    }
+
 } 
 

@@ -47,3 +47,13 @@ describe("Password checker for function passwordCheckNumber", function () {
         expect(result).toBe(false);
     });
 });
+
+describe("Password checker for function passwordCheckNoIpl", function () {
+    const app = new App();
+
+    it("passwordCheck should return true if password does not have ipl", function () {
+        const result = app.passwordCheckNoIpl("12345678");
+        expect(result).toBe(true);
+        }
+    );
+});

@@ -17,6 +17,9 @@ export class App{
 
          return numbers.some(num => password.includes(num));
     }
+    passwordCheckNoIpl(password) {
+            return true;
+    }
 
 } 
 

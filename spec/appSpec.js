@@ -56,4 +56,9 @@ describe("Password checker for function passwordCheckNoIpl", function () {
         expect(result).toBe(true);
         }
     );
+
+    it("passwordCheck should return false if password has ipl", function () {
+        const result = app.passwordCheckNoIpl("ipl12345678");
+        expect(result).toBe(false);
+    });
 });

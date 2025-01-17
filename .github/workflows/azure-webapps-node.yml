@@ -31,4 +31,4 @@ jobs:
 
     # Run tests
     - name: Run tests
-      run: npm test
+      run: npx jasmine
